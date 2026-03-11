@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório UERC: 11 Anos de Isolamento</title>
+    <meta name="description" content="Infográfico interativo sobre os 11 anos de prisão e as 24 transferências que isolaram um defensor. Conheça a proposta das UERCs.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon (opcional) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+</head>
+<body>
+    <main class="container">
+        <!-- Seção de Abertura (0:00 - 0:45) -->
+        <section id="abertura" class="section fade-in">
+            <div class="profile-container">
+                <!-- Silhueta para preservar identidade -->
+                <div class="silhouette">
+                    <img src="assets/images/silhouette-profile.jpg" alt="Silhueta representando Valdimir" class="profile-img">
+                </div>
+                <div class="headlines">
+                    <img src="assets/images/newspaper-headline-1.jpg" alt="Manchete de jornal da época da condenação" class="headline-img">
+                    <img src="assets/images/newspaper-headline-2.jpg" alt="Outra manchete de jornal da época" class="headline-img">
+                </div>
+            </div>
+            <div class="narracao">
+                <p class="destaque">"11 anos presos por um erro que ninguém viu."</p>
+            </div>
+        </section>
+
+        <!-- Seção de Visualização de Dados (0:45 - 2:00) -->
+        <section id="dados" class="section fade-in">
+            <h2>24 transferências, um único objetivo: isolamento</h2>
+            <div class="mapa-container">
+                <!-- Mapa interativo será renderizado via JavaScript (Canvas) -->
+                <canvas id="mapaTransferencias" width="800" height="400"></canvas>
+                <p class="legenda">Cada linha representa uma transferência entre presídios. <span class="destaque">Isolamento como barreira de defesa.</span></p>
+            </div>
+        </section>
+
+        <!-- Seção de Depoimento (2:00 - 3:30) -->
+        <section id="depoimento" class="section fade-in">
+            <h2>O som do isolamento</h2>
+            <div class="audio-player">
+                <audio id="audioTestemunho" controls>
+                    <source src="assets/audio/testimony-cut.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <p class="transcricao">
+                    <span class="aspas">“</span>Eu mudava de cela antes de minha carta chegar.<span class="aspas">”</span>
+                </p>
+            </div>
+            <!-- Onda sonora animada simples -->
+            <div class="waveform"></div>
+        </section>
+
+        <!-- Seção de Conclusão Institucional (3:30 - 5:00) -->
+        <section id="conclusao" class="section fade-in">
+            <h2>Como evitar que isso se repita?</h2>
+            <div class="uerc-explicacao">
+                <p>As <strong>Unidades Especializadas de Regramento de Conduta (UERCs)</strong> são uma proposta para garantir que o isolamento não seja usado como instrumento de ruptura de defesa.</p>
+                <ul>
+                    <li>✅ Limitação geográfica para transferências</li>
+                    <li>✅ Comunicação garantida com defesa e família</li>
+                    <li>✅ Transparência processual</li>
+                </ul>
+                <a href="#" class="btn-leitura" id="btnLeitura">Acesse o capítulo completo (simulado)</a>
+                <p class="nota-rodape">* Este é um estudo de caso composto, baseado em situações reais, com nomes e características preservados em conformidade com a LGPD.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script/main.js"></script>
+</body>
+</html>
